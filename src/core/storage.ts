@@ -26,7 +26,10 @@ export class Storage {
 
   constructor(ctx: Context, options: StorageOptions) {
     this.ctx = ctx
-    this.options = options
+    this.options = {
+      ...options,
+      ...(this.ctx.$config && this.ctx.$config.auth)
+    }
 
     this._initState()
   }

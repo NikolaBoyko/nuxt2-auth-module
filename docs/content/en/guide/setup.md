@@ -16,13 +16,13 @@ Check the [Nuxt.js documentation](https://nuxtjs.org/guides/configuration-glossa
 
 </alert>
 
-Add `@nuxtjs/auth-next @nuxtjs/axios` dependencies to your project:
+Add `@nik7212/nuxt2-auth-module @nuxtjs/axios` dependencies to your project:
 
 <code-group>
   <code-block label="yarn" active>
 
 ```bash
-yarn add --exact @nuxtjs/auth-next
+yarn add --exact @nik7212/nuxt2-auth-module
 yarn add @nuxtjs/axios
 ```
 
@@ -30,20 +30,20 @@ yarn add @nuxtjs/axios
   <code-block label="npm">
 
 ```bash
-npm install --save-exact @nuxtjs/auth-next
+npm install --save-exact @nik7212/nuxt2-auth-module
 npm install @nuxtjs/axios
 ```
 
   </code-block>
 </code-group>
 
-Then, add `@nuxtjs/auth-next` to the `modules` section of `nuxt.config.js`:
+Then, add `@nik7212/nuxt2-auth-module` to the `modules` section of `nuxt.config.js`:
 
 ```js{}[nuxt.config.js]
 {
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    '@nik7212/nuxt2-auth-module'
   ],
   auth: {
     // Options
@@ -65,13 +65,13 @@ For more information about using TypeScript in your Nuxt.js project, visit the [
 
 </alert>
 
-Add `@nuxtjs/auth-next` to the `compilerOptions.types` section of your project's `tsconfig.json` file:
+Add `@nik7212/nuxt2-auth-module` to the `compilerOptions.types` section of your project's `tsconfig.json` file:
 
 ```json{}[tsconfig.json]
 {
   compilerOptions: {
     "types": [
-      "@nuxtjs/auth-next",
+      "@nik7212/nuxt2-auth-module",
     ]
   },
 }
